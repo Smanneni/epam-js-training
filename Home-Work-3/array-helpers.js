@@ -1,54 +1,54 @@
 Array.prototype.square = function() {
-    var retval = [];
+    var retVal = [];
     for (var i = 0, len = this.length; i < len; ++i) {
-        retval.push(this[i] * this[i]);
+        retVal.push(this[i] * this[i]);
     }
-    return retval;
+    return retVal;
 };
 
 Array.prototype.cube = function() {
-    var retval = [];
+    var retVal = [];
     for (var i = 0, len = this.length; i < len; ++i) {
-        retval.push(this[i] * this[i] * this[i]);
+        retVal.push(this[i] * this[i] * this[i]);
     }
-    return retval;
+    return retVal;
 };
 
 Array.prototype.average = function() {
-    var retval = NaN;
+    var retVal = NaN;
     for (var i = 0, len = this.length; i < len; ++i) {
         if (isNaN(retval)) {
-            retval = 0;
+            retVal = 0;
         }
-        retval += this[i];
+        retVal += this[i];
     }
-    return retval / this.length;
+    return retVal / this.length;
 };
 
 Array.prototype.sum = function() {
-    var retval = 0;
+    var retVal = 0;
     for (var i = 0, len = this.length; i < len; ++i) {
-        retval += this[i];
+        retVal += this[i];
     }
-    return retval;
+    return retVal;
 };
 
 Array.prototype.even = function() {
-    var retval = [];
+    var retVal = [];
     for (var i = 0, len = this.length; i < len; ++i) {
         if (this[i] % 2 == 0) {
-            retval.push(this[i]);
+            retVal.push(this[i]);
         }
     }
-    return retval;
+    return retVal;
 };
 
 Array.prototype.odd = function() {
-    var retval = [];
+    var retVal = [];
     for (var i = 0, len = this.length; i < len; ++i) {
         if (this[i] % 2 == 1) {
-            retval.push(this[i]);
+            retVal.push(this[i]);
         }
     }
-    return retval;
+    return retVal;
 };
