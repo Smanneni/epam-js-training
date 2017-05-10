@@ -1,3 +1,5 @@
-function construct(Class) {
-    return new(Class.bind.apply(Class, arguments))()
+function construct(Class, ...arg) {
+    var newOb = Object.create(Class.prototype);
+    Class.apply(newOb, arg);
+    return newOb;
 }
