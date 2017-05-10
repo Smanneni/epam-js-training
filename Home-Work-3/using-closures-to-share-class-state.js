@@ -12,9 +12,9 @@ var Cat = (function() {
             get: function() {
                 return weight;
             },
-            set: function(w) {
-                totalWeight -= weight - w;
-                weight = w;
+            set: function(wi) {
+                totalWeight -= (weight - wi);
+                weight = wi;
             }
         });
         totalWeight += weight;
