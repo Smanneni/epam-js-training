@@ -4,6 +4,9 @@ var Cat = (function() {
     var countInstances = 0;
 
     function Cat(name, weight) {
+        if (arguments.length < 2) {
+            throw new Error('Both name and weight sould be specified.');
+        }
         this.name = name;
         Object.defineProperty(this, 'weight', {
             get: function() {
