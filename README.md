@@ -1,3 +1,3 @@
 # epam-js-training
 
-git test
+git test  added
