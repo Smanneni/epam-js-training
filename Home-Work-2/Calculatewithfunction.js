@@ -3,16 +3,16 @@ var number = function(digit) {
         return operator ? operator(digit) : digit;
     }
 };
-var zero = number(0);
-var one = number(1);
-var two = number(2);
-var three = number(3);
-var four = number(4);
-var five = number(5);
-var six = number(6);
-var seven = number(7);
-var eight = number(8);
-var nine = number(9);
+var zero = number(0),
+    one = number(1),
+    two = number(2),
+    three = number(3),
+    four = number(4),
+    five = number(5),
+    six = number(6),
+    seven = number(7),
+    eight = number(8),
+    nine = number(9);
 
 function plus(rightval) {
     return function(leftval) {
