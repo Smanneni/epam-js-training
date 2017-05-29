@@ -1,7 +1,7 @@
 var Cat = (function() {
 
-    var totalWeight = 0;
-    var countInstances = 0;
+    var totalWeight = 0,
+        countInstances = 0;
 
     function Cat(name, weight) {
         if (arguments.length < 2) {
